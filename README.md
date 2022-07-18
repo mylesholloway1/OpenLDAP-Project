@@ -8,9 +8,13 @@ Repository of notes for the OpenLDAP Project
 
 ### Selecting RedHat OS & Security settings
 * Select RedHat Enterprise
+
+
 ![select redhat](img/one.png)
 
 * Add inbound rules to Security group
+
+
 ![Select Edit](img/two.png)
 ![configure inbound rule](img/three.png)
 
