@@ -34,3 +34,11 @@ Repository of notes for the OpenLDAP Project
 * while configuring, if cannot locate libtool run ```yum install libtool-ltdl-devel```
 
 
+```sudo yum install cyrus-sasl-devel make libtool autoconf libtool-ltdl-devel openssl-devel libdb-devel tar gcc perl perl-devel wget vim
+
+sudo useradd -r -M -d /var/lib/openldap -u 55 -s /usr/sbin/nologin ldap
+
+```
+
+
+
