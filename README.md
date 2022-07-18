@@ -8,3 +8,4 @@ Repository of notes for the OpenLDAP Project
 
 ### Difference from video
 * Select RedHat Enterprise
+![select redhat](img/one.png)
