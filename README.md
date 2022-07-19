@@ -26,4 +26,4 @@ Repository of notes for the OpenLDAP Project
 
 ## Installing OpenLDAP to EC2 instance
 
-* Following [install Video](youtube.com/watch?v=MF1rzvjQrk0) until service started
+* Following [install Video](https://youtube.com/watch?v=MF1rzvjQrk0) until service started
