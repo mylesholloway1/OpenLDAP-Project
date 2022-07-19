@@ -26,19 +26,4 @@ Repository of notes for the OpenLDAP Project
 
 ## Installing OpenLDAP to EC2 instance
 
-* Following [install instructions](https://www.herongyang.com/Linux/LDAP-Install-OpenLDAP-Server-on-CentOS-8.html)
-* During Step 4. Change the OpenLDAP version from openldap-2.4.9.tgz to the desired version (the version mentioned in the e-mail)
-
-### Errors
-* while configuring, if cannot locate cc(1) run ```sudo yum install gcc```
-* while configuring, if cannot locate libtool run ```yum install libtool-ltdl-devel```
-
-
-```sudo yum install cyrus-sasl-devel make libtool autoconf libtool-ltdl-devel openssl-devel libdb-devel tar gcc perl perl-devel wget vim
-
-sudo useradd -r -M -d /var/lib/openldap -u 55 -s /usr/sbin/nologin ldap
-
-```
-
-
-
+* Following [install Video](youtube.com/watch?v=MF1rzvjQrk0) until service started
