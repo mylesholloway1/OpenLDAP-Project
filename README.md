@@ -26,6 +26,8 @@ Repository of notes for the OpenLDAP Project
 
 ## Installing OpenLDAP to EC2 instance
 
-* Following [install video](https://youtube.com/watch?v=MF1rzvjQrk0) until service started
+### RHEL7
+Following [install & config. instructions](cyberithub.com/best-steps-to-install-and-configure-openldap-server-on-rhel-centos-7-8/)
+[Needed documentation](digitalocean.com/community/tutorials/how-to-change-account-passwords-on-an-openldap-server) for knowing and changing the root password and user
 
-![openldap service running](img/four.png)
+
