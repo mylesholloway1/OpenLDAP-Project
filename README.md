@@ -21,6 +21,10 @@ Repository of notes for the OpenLDAP Project
 
 ![select redhat](img/five.png)
 
+![select redhat](img/six.png)
+
+![select redhat](img/seven.png)
+
 * Add inbound rules to Security group
 
 
