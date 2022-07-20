@@ -1,6 +1,9 @@
 # OpenLDAP-Project
 Repository of notes for the OpenLDAP Project
 
+# Other useful links
+* [Copy a file to EC2](medium.com/srcecde/copy-file-directory-to-from-ec2-using-scp-secure-copy-685c46636399)
+
 ## Apache Directory Studio
 * In order to get Apache to properly run, I had to [download and install OpenJDK](https://adoptopenjdk.net/)
 
@@ -16,7 +19,7 @@ Repository of notes for the OpenLDAP Project
 * Select RedHat Enterprise
 
 
-![select redhat](img/one.png)
+![select redhat](img/five.png)
 
 * Add inbound rules to Security group
 
