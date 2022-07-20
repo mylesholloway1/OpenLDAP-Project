@@ -45,7 +45,7 @@ Repository of notes for the OpenLDAP Project
 * [Needed documentation](https://digitalocean.com/community/tutorials/how-to-change-account-passwords-on-an-openldap-server) for knowing and changing the root password and user
 
 
-### Installing Ansible to EC2 Instance
+## Installing Ansible to EC2 Instance
 
 ### On RHEL7
 * Following [install & config. instructions](https://developers.redhat.com/blog/2016/08/15/install-ansible-on-rhel#)
