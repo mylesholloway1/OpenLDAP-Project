@@ -29,7 +29,14 @@ Repository of notes for the OpenLDAP Project
 
 
 ![Select Edit](img/two.png)
+
+### Security for OpenLDAP
 ![configure inbound rule](img/three.png)
+
+### Security for Ansible
+![configure inbound rule](img/eight.png)
+
+
 
 ## Installing OpenLDAP to EC2 instance
 
