@@ -50,4 +50,4 @@ Repository of notes for the OpenLDAP Project
 ### On RHEL7
 * Following [install & config. instructions](https://developers.redhat.com/blog/2016/08/15/install-ansible-on-rhel#)
 
-
+* [get it](docs.ansible.com/ansible/latest/getting_started/index.html)
