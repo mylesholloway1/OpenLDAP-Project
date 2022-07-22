@@ -50,4 +50,6 @@ Repository of notes for the OpenLDAP Project
 ### On RHEL7
 * Following [install & config. instructions](https://developers.redhat.com/blog/2016/08/15/install-ansible-on-rhel#)
 
-* [get it](https://docs.ansible.com/ansible/latest/getting_started/index.html)
+## Connecting Ansible Server to OpenLDAP
+* [ansible Documentation](https://docs.ansible.com/ansible/latest/getting_started/index.html)
+* I ultimatley followed [this video](https://youtube.com/watch?v=EGWyN6DMI1g) becuase at times the ansible doc is very vauge on steps
