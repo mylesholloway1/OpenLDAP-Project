@@ -52,4 +52,4 @@ Repository of notes for the OpenLDAP Project
 
 ## Connecting Ansible Server to OpenLDAP
 * [Ansible Documentation](https://docs.ansible.com/ansible/latest/getting_started/index.html)
-* I ultimatley followed [this video](https://youtube.com/watch?v=EGWyN6DMI1g) becuase at times the ansible doc is very vauge on steps
+* I ultimatley followed [this video](https://youtube.com/watch?v=EGWyN6DMI1g) because at times the ansible doc is very vauge with steps
