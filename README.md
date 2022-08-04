@@ -45,6 +45,9 @@ Repository of notes for the OpenLDAP Project
 * Following [install & config. instructions](https://cyberithub.com/best-steps-to-install-and-configure-openldap-server-on-rhel-centos-7-8/)
 * [Needed documentation](https://digitalocean.com/community/tutorials/how-to-change-account-passwords-on-an-openldap-server) for knowing and changing the root password and user
 
+### Tasks to automate
+* [Update base domain name](stackoverflow.com/questions/19537319/change-basedn-in-openldap)
+
 
 ## Installing Ansible to EC2 Instance
 
