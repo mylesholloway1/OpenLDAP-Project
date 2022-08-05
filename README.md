@@ -46,7 +46,7 @@ Repository of notes for the OpenLDAP Project
 * [Needed documentation](https://digitalocean.com/community/tutorials/how-to-change-account-passwords-on-an-openldap-server) for knowing and changing the root password and user
 
 ### Tasks to automate
-* [Update base domain name](stackoverflow.com/questions/19537319/change-basedn-in-openldap)
+* [Update base domain name](https://stackoverflow.com/questions/19537319/change-basedn-in-openldap)
 
 
 ## Installing Ansible to EC2 Instance
