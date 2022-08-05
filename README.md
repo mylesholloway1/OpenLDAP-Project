@@ -2,8 +2,8 @@
 Repository of notes for the OpenLDAP Project
 
 # Other useful links
-* [Copy a file to EC2](medium.com/srcecde/copy-file-directory-to-from-ec2-using-scp-secure-copy-685c46636399)
-* [Store git username but not password](stackoverflow.com/questions/54507296/how-to-have-git-store-only-my-username-and-not-my-password#:~:text=If%20you%20want%20to%20store,the%20URL%20for%20the%20remote.)
+* [Copy a file to EC2](https://medium.com/srcecde/copy-file-directory-to-from-ec2-using-scp-secure-copy-685c46636399)
+* [Store git username but not password](https://stackoverflow.com/questions/54507296/how-to-have-git-store-only-my-username-and-not-my-password#:~:text=If%20you%20want%20to%20store,the%20URL%20for%20the%20remote.)
 
 ## Apache Directory Studio
 * In order to get Apache to properly run, I had to [download and install OpenJDK](https://adoptopenjdk.net/)
