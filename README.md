@@ -47,6 +47,7 @@ Repository of notes for the OpenLDAP Project
 
 ### Tasks to automate
 * [Update base domain name](https://stackoverflow.com/questions/19537319/change-basedn-in-openldap)
+* ```slapadd -b "dc=doed,dc=fsa,dc=com" -v -u -l init_ldap_struc.ldif```
 
 
 ## Installing Ansible to EC2 Instance
