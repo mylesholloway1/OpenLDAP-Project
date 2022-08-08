@@ -48,7 +48,6 @@ Repository of notes for the OpenLDAP Project
 ### Tasks to automate
 * [Update base domain name](https://stackoverflow.com/questions/19537319/change-basedn-in-openldap)
 * ```slapadd -b "dc=doed,dc=fsa,dc=com" -v -u -l init_ldap_struc.ldif```
-* 
 
 
 ## Installing Ansible to EC2 Instance
@@ -63,7 +62,7 @@ Repository of notes for the OpenLDAP Project
 ## Using Ansible for the first time
 * format of a playbook
 * To create a new playbook, ```$ vim <descript>.yml```
-* you can copy and paste a test yaml from [here](/OpenLDAP-Project/ansible/playbook/Simple-install.yml)
+* you can copy and paste a test yaml from [here](github.com/mylesholloway1/OpenLDAP-Project/tree/main/ansible/playbook/simple-install.yml)
 ```yml
 #every playbook starts with three dashes
 --- 
