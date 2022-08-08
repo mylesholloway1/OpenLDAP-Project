@@ -63,7 +63,18 @@ Repository of notes for the OpenLDAP Project
 ## Using Ansible for the first time
 * format of a playbook
 * To create a new playbook, ```$ vim <descript>.yml```
+* you can copy and paste a test yaml from here
 ```yml
 #every playbook starts with three dashes
 --- 
+-name: <description>
+ hosts: all #You can specify the server/cluster to run this playbook on
+ become: true #Use this to run the playbook as root user
+ 
+ tasks:
+     name: <description>
+     <module>...
+     
+     name: <description>
+     <module>...
 ```
