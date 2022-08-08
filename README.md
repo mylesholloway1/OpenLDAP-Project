@@ -77,3 +77,4 @@ Repository of notes for the OpenLDAP Project
      name: <description>
      <module>...
 ```
+* [Check yaml syntax](yamllint.com)
