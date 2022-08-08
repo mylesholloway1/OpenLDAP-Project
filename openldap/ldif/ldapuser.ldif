@@ -1,0 +1,16 @@
+dn: uid=myles,ou=Users,dc=doed,dc=fsa,dc=com
+objectClass: top
+objectClass: account
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: myles
+uid: myles
+gidNumber: 0
+uidNumber: 1005
+homeDirectory: /home/myles
+userPassword: {SSHA}2b99MscClX6gJr8lVuxKB1DujSW5MRBb 
+loginShell: /bin/bash
+gecos: myles
+shadowLastChange: 0
+shadowMax: 0
+shadowWarning: 0

@@ -1,0 +1,33 @@
+# Root
+dn:                    dc=doed,dc=fsa,dc=com
+description:           New LDAP BaseDN
+o:                     parent.doed.fsa.com
+objectClass:           top
+objectClass:           dcObject
+objectClass:           organization
+structuralObjectClass: organization
+
+# administrator
+dn:                    cn=admin,dc=doed,dc=fsa,dc=com
+objectClass:           simpleSecurityObject
+objectClass:           organizationalRole
+cn:                    admin
+description:           LDAP administrator
+userPassword:          {SSHA}8J4yVS3EtAe7hu/iOGJITMO5rS/aGfO7
+structuralObjectClass: organizationalRole
+
+# Subtree for Users
+dn:                    ou=Users,dc=doed,dc=fsa,dc=com
+ou:                    Users
+description:           Parent Ldap Users
+objectClass:           organizationalUnit
+objectClass:           top
+structuralObjectClass: organizationalUnit
+
+# Subtree for Groups
+dn:                    ou=Groups,dc=doed,dc=fsa,dc=com
+ou:                    Groups
+description:           Parent LDAP Groups
+objectClass:           organizationalUnit
+objectClass:           top
+structuralObjectClass: organizationalUnit
