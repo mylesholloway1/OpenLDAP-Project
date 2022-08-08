@@ -62,7 +62,7 @@ Repository of notes for the OpenLDAP Project
 ## Using Ansible for the first time
 * format of a playbook
 * To create a new playbook, ```$ vim <descript>.yml```
-* you can copy and paste a test yaml from [here](github.com/mylesholloway1/OpenLDAP-Project/tree/main/ansible/playbook/simple-install.yml)
+* you can copy and paste a test yaml from [here](https://github.com/mylesholloway1/OpenLDAP-Project/blob/main/ansible/playbook/simple-intsall.yml)
 ```yml
 #every playbook starts with three dashes
 --- 
