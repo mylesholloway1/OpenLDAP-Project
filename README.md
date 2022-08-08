@@ -78,3 +78,5 @@ Repository of notes for the OpenLDAP Project
      <module>...
 ```
 * [Check yaml syntax](yamllint.com)
+
+### Running asible for add_user.ldif
