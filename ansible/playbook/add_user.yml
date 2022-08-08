@@ -1,0 +1,12 @@
+---
+- name: ldap add entry
+  hosts: openldap
+  become: true
+  
+  tasks:
+  - name: add user to ldap
+    shell: ldapadd -x -H ldap:// -D "cn=service,dc=doed,dc=fsa,dc=com" -f ~/Repos/OpenLDAP-project/openldap/ldif/ldapuser.ldif -W
+    register: shell_output
+  
+  - name: debug shell output
+    debug: var=shell_output
