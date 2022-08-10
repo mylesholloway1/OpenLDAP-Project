@@ -1,12 +1,17 @@
 ---
 - name: ldap add entry
   hosts: openldap
+  vars_prompt:
+
+  - name: file
+    prompt: provide name of file in Remote:/root/Repos/OpenLDAP-Project/openldap/ldif/add_user.ldif
+    private: no
   become: true
-  
+ 
   tasks:
   - name: add user to ldap
-    shell: ldapadd -x -H ldap:// -D "cn=service,dc=doed,dc=fsa,dc=com" -f ~/Repos/OpenLDAP-project/openldap/ldif/ldapuser.ldif -W
-    register: shell_output
-  
-  - name: debug shell output
-    debug: var=shell_output
+    command: ldapadd -x -H ldap:// -D "cn=service,dc=doed,dc=fsa,dc=com" -f "/root/Repos/OpenLDAP-Project/openldap/ldif/{{file}}" -w "servicepassword"
+    register: output
+
+  - debug:
+      var: output.stdout_lines

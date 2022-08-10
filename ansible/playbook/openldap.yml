@@ -1,0 +1,49 @@
+---
+#Playbook for all OpenLDAP processes
+- name: OpenLDAP Playbook
+  hosts: openldap
+  become: true
+  vars:
+    ldap_auth:
+      server_uri: ldap://localhost/
+      bind_dn: cn=service,dc=doed,dc=fsa,dc=com
+      bind_pw: "servicepassword"
+  
+  tasks:
+  - name: Read users from CSV file
+    read_csv:
+      path: "~/Repos/OpenLDAP-Project/ansible/csv/users.csv"
+      key: name
+    register: users
+
+  - name: add user entry
+    ldap_entry:
+      dn: "uid={{ users.dict.dag.name }},ou=Users,dc=doed,dc=fsa,dc=com"
+      objectClass:
+        - top
+        - account
+        - posixAccount
+        - shadowAccount
+      attributes:      
+        cn: "{{ users.dict.dag.name }}"
+        uid: "{{ users.dict.dag.name }}"
+        gidNumber: 0
+        uidNumber: 1009
+        homeDirectory: "/home/{{ users.dict.dag.name }}"
+        userPassword: "{SSHA}wvg4XzCC3vOZAUyA8bPQnOhkfaz50FyD"
+        loginShell: /bin/bash
+        gecos: "{{ users.dict.dag.name }}"
+        shadowLastChange: 0
+        shadowMax: 0
+        shadowWarning: 0
+    args: "{{ ldap_auth }}"
+    tags:
+      - adduser
+
+  - name: Get rid of an old entr0y
+    ldap_entry:
+      dn: "uid={{ users.dict.dag.name }},ou=Users,dc=doed,dc=fsa,dc=com"
+      state: absent
+    args: "{{ ldap_auth }}"
+    tags:
+      - removeuser

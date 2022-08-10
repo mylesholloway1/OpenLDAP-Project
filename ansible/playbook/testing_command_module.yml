@@ -1,0 +1,13 @@
+---
+- name: ldap add entry
+  hosts: openldap
+  become: true
+  
+  tasks:
+
+  - name: add user to ldap
+    command: whoami  
+    register: myout
+
+  - debug:
+      var: myout.stdout_lines 
