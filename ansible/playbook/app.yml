@@ -1,0 +1,12 @@
+---
+- name: run on openldap host 
+  hosts:  openldap
+  vars:
+    env: staging
+  become: true
+
+  tasks:
+  - name: Config file onto remote host
+    template:
+      src: ../templates/app.conf.j2
+      dest: /etc/my_app.conf
