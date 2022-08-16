@@ -58,7 +58,7 @@
   - name: create group in parent ou 'Groups'
     ldap_entry:
       dn: "ou=Tableau/Serverless Ops,ou=Groups,dc=doed,dc=fsa,dc=com"
-      
+      objectClass: organizationalUnit      
 
 
 
