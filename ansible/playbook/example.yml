@@ -1,0 +1,46 @@
+---
+- name: loop example
+  hosts: openldap
+  vars: 
+    env: staging
+  become: true
+
+  tasks:
+#================== LOOP EXAMPLE ==================== TAG: loop_csv ===================
+    - name: read csv
+      read_csv:
+        path: /root/hosts.csv #path on Remote
+        key: hostname         #first header
+      register: vms           #global var
+      tags: loop_csv
+    - debug:
+        msg: "{{ item.key }}:
+              {{ item.value.hostname }},
+              {{ item.value.partition }},
+              {{ item.value.ip }}"
+      loop: "{{ vms.dict|dict2items }}"
+      tags: loop_csv
+
+#================= TEMPLATE EXAMPLE =============== TAG: template ====================
+    - name: Config file onto remote host
+      template:
+        src: ../templates/app.conf.j2 #path on ans_host
+        dest: /etc/my_app.conf        #path on remote
+      tags: template
+
+#================= SIMPLE COMMAND EXAMPLE ========= TAG: whoami ===================== 
+    - name: add user to ldap
+      command: whoami   
+      register: myout #command output
+      tags: whoami
+
+    - debug:
+        var: myout.stdout_lines
+      tags: whoami
+ 
+#================ SIMPLE INSTALL EXAMPLE ========= TAG: install ======================
+    - name: install dos2unix
+      yum:
+        name:  dos2unix
+        state: latest
+      tags: install
