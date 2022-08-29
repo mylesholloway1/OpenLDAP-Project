@@ -45,8 +45,6 @@ Repository of notes for the OpenLDAP Project
 
 
 ## Installing Ansible to EC2 Instance
-
-### On RHEL7
 * Following [install & config. instructions](https://developers.redhat.com/blog/2016/08/15/install-ansible-on-rhel#)
 
 ## Connecting Ansible Server to OpenLDAP
