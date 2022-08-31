@@ -54,8 +54,7 @@
     - create-ec2
 
 #====================== VALIDATE EC2 INFO ======================
-- post_tasks:
-    - name: validate ec2 has been created
-      script: validate_ec2_creation.py
-      tags:
-        - validate-ec2
+- name: validate ec2 has been created
+  script: validate_ec2_creation.py
+  tags:
+    - validate-ec2
