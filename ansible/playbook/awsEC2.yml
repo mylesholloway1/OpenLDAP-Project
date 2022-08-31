@@ -7,7 +7,7 @@
   gather_facts: no
   tasks:
 #========================= GATHER VPC INFO ==================== TAG: always =======================
-    - name: get VPC info
+    - name: get VPC infos
       ec2_vpc_net_info:
         filters:
           "tag:Name": ANS0905-VPC #TEMPLATE
