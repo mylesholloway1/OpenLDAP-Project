@@ -58,4 +58,4 @@
     - name: validate ec2 has been created
       script: validate_ec2_creation.py
       tags:
-        - create-ec2
+        - validate-ec2
