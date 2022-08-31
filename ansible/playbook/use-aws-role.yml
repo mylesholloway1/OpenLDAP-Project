@@ -1,0 +1,6 @@
+---
+- name: use motd role playbook
+  hosts: localhost
+  become: true
+  roles:
+    - aws-ec2-openldap
