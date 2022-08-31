@@ -1,4 +1,4 @@
 ---
 # defaults file for aws-ec2-openldap
 
-system_owner: user@host.example.com
+ansible_python_interpreter: /usr/bin/python3.8

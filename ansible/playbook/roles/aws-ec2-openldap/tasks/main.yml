@@ -1,9 +1,2 @@
 ---
 # tasks file for aws-ec2-openldap
-- name: deliver motd file  
-  template:
-    src: aws-ec2-openldap.j2    
-    dest: /etc/aws-ec2-openldap
-    owner: root 
-    group: root
-    mode: 0444
