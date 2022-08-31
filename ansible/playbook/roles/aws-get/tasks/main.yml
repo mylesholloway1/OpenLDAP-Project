@@ -50,11 +50,12 @@
 - debug: 
     var: aws_groups.security_groups[0].group_id
   tags: 
-    - gether-ec2-info
+    - gather-ec2-info
     - create-ec2
 
 #====================== VALIDATE EC2 INFO ======================
-- name: validate ec2 has been created
-  script: validate_ec2_creation.py
-  tags:
-    - create-ec2
+- post_tasks:
+    - name: validate ec2 has been created
+      script: validate_ec2_creation.py
+      tags:
+        - create-ec2
