@@ -8,13 +8,17 @@
       "tag:Name": "{{ vpc_tag_name }}"
     region: "{{ user_region }}"
   register: vpcs
-  tags: ec2-dep-info
+  tags: 
+    - ec2-dep-info
+    - create-ec2
 
 - name: display vpc-id
   debug: 
     var: vpcs.vpcs[0].id
-  tags: ec2-dep-info
-
+  tags: 
+    - ec2-dep-info
+    - create-ec2
+    
 #====================== GATHER SUBNET INFO ===================== TAG: ec2-dep-info ======================
 - name: get subnet info
   ec2_vpc_subnet_info:
@@ -23,10 +27,14 @@
       vpc-id: "{{ vpcs.vpcs[0].id }}"
     region: "{{ user_region }}"
   register: aws_subnets
-  tags: ec2-dep-info
+  tags: 
+    - ec2-dep-info
+    - create-ec2
 - debug: 
     var: aws_subnets.subnets[0].id
-  tags: ec2-dep-info  
+  tags: 
+    - ec2-dep-info
+    - create-ec2  
 
 #====================== GATHER SEC GROUP INFO ================= TAG: ec2-dep-info =====================
 - name: get secuirty group info
@@ -36,8 +44,12 @@
       vpc-id: "{{ vpcs.vpcs[0].id }}" 
     region: "{{ user_region }}"
   register: aws_groups
-  tags: ec2-dep-info
+  tags: 
+    - ec2-dep-info
+    - create-ec2
 - debug: 
     var: aws_groups.security_groups[0].group_id
-  tags: ec2-dep-info
+  tags: 
+    - ec2-dep-info
+    - create-ec2
 
