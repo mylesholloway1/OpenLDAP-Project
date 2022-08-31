@@ -1,7 +1,5 @@
 ---
 # tasks file for aws-ec2-openldap
-- vars:
-    ansible_python_interpreter: /usr/bin/python3.8
 
 #========================= GATHER VPC INFO ==================== TAG: always =======================
 - name: get VPC info
