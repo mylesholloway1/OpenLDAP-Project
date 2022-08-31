@@ -1,7 +1,7 @@
 ---
 # tasks file for aws-get
 
-#========================= GATHER VPC INFO ==================== TAG: ec2-dep-info =======================
+#========================= GATHER VPC INFO ==================== 
 - name: get VPC info
   ec2_vpc_net_info:
     filters:
@@ -9,17 +9,17 @@
     region: "{{ user_region }}"
   register: vpcs
   tags: 
-    - ec2-dep-info
+    - gather-ec2-info
     - create-ec2
 
 - name: display vpc-id
   debug: 
     var: vpcs.vpcs[0].id
   tags: 
-    - ec2-dep-info
+    - gather-ec2-info
     - create-ec2
     
-#====================== GATHER SUBNET INFO ===================== TAG: ec2-dep-info ======================
+#====================== GATHER SUBNET INFO ===================== 
 - name: get subnet info
   ec2_vpc_subnet_info:
     filters: 
@@ -28,15 +28,15 @@
     region: "{{ user_region }}"
   register: aws_subnets
   tags: 
-    - ec2-dep-info
+    - gather-ec2-info
     - create-ec2
 - debug: 
     var: aws_subnets.subnets[0].id
   tags: 
-    - ec2-dep-info
+    - gather-ec2-info
     - create-ec2  
 
-#====================== GATHER SEC GROUP INFO ================= TAG: ec2-dep-info =====================
+#====================== GATHER SEC GROUP INFO ================= 
 - name: get secuirty group info
   ec2_group_info: 
     filters:
@@ -45,11 +45,16 @@
     region: "{{ user_region }}"
   register: aws_groups
   tags: 
-    - ec2-dep-info
+    - gather-ec2-info
     - create-ec2
 - debug: 
     var: aws_groups.security_groups[0].group_id
   tags: 
-    - ec2-dep-info
+    - gether-ec2-info
     - create-ec2
 
+#====================== VALIDATE EC2 INFO ======================
+- name: validate ec2 has been created
+  script: validate_ec2_creation.py
+  tags:
+    - create-ec2
