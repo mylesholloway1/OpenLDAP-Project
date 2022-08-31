@@ -1,21 +1,21 @@
 ---
 # tasks file for aws-get
 
-#========================= GATHER VPC INFO ==================== TAG: always =======================
+#========================= GATHER VPC INFO ==================== TAG: ec2-dep-info =======================
 - name: get VPC info
   ec2_vpc_net_info:
     filters:
       "tag:Name": "{{ vpc_tag_name }}"
     region: "{{ user_region }}"
   register: vpcs
-  tags: always
+  tags: ec2-dep-info
 
 - name: display vpc-id
   debug: 
     var: vpcs.vpcs[0].id
-  tags: always
+  tags: ec2-dep-info
 
-#====================== GATHER SUBNET INFO ===================== TAG: always ======================
+#====================== GATHER SUBNET INFO ===================== TAG: ec2-dep-info ======================
 - name: get subnet info
   ec2_vpc_subnet_info:
     filters: 
@@ -23,12 +23,12 @@
       vpc-id: "{{ vpcs.vpcs[0].id }}"
     region: "{{ user_region }}"
   register: aws_subnets
-  tags: always
+  tags: ec2-dep-info
 - debug: 
     var: aws_subnets.subnets[0].id
-  tags: always  
+  tags: ec2-dep-info  
 
-#====================== GATHER SEC GROUP INFO ================= TAG: always =====================
+#====================== GATHER SEC GROUP INFO ================= TAG: ec2-dep-info =====================
 - name: get secuirty group info
   ec2_group_info: 
     filters:
@@ -36,8 +36,8 @@
       vpc-id: "{{ vpcs.vpcs[0].id }}" 
     region: "{{ user_region }}"
   register: aws_groups
-  tags: always
+  tags: ec2-dep-info
 - debug: 
     var: aws_groups.security_groups[0].group_id
-  tags: always
+  tags: ec2-dep-info
 

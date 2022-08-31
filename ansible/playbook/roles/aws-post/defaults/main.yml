@@ -1,2 +1,7 @@
 ---
 # defaults file for aws-post
+ec2_name: OLDAP0905_TEST
+ec2_instance_type: t2.micro
+ec2_key_name: OpenLabEC2Key
+ec2_image_id: ami-029c0fbe456d58bd1
+ec2_region: us-east-1
