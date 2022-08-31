@@ -8,19 +8,6 @@
   roles:
     - aws-ec2-openldap
   tasks:
-#===================== CREATE OPENLDAP EC2 INSTANCE =========== TAG: oldap =======================
-    - name: EC2 instance
-      ec2_instance:
-        name: LDAP0905_TEST #TEMPLATE
-        vpc_subnet_id: "{{ aws_subnets.subnets[0].id }}"
-        instance_type: t2.micro #TEMPLATE
-        security_group: "{{ aws_groups.security_groups[0].group_id }}"
-        key_name: OpenLabEC2Key #TEMPLATE
-        image_id: ami-029c0fbe456d58bd1 #TEMPLATE
-        region: us-east-1 #TEMPLATE
-        network:
-          assign_public_ip: true 
-      tags: oldap
 
 #=================== GATHER EC2 INFO ========================= TAG: ec2-info ================
 #    - name: get ec2 info
