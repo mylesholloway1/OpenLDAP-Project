@@ -5,20 +5,9 @@
   vars: 
     ansible_python_interpreter: /usr/bin/python3.8
   gather_facts: no
+  roles:
+    - aws-ec2-openldap
   tasks:
-#========================= GATHER VPC INFO ==================== TAG: always =======================
-    - name: get VPC infos
-      ec2_vpc_net_info:
-        filters:
-          "tag:Name": ANS0905-AUTO #TEMPLATE
-        region: us-east-1 #TEMPLATE
-      register: vpcs
-      tags: always
-
-    - name: display vpc-id
-      debug: 
-        var: vpcs
-      tags: always
 
 #====================== GATHER SUBNET INFO ===================== TAG: always ======================
     - name: get subnet info
