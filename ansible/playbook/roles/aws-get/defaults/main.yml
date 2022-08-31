@@ -1,5 +1,5 @@
 ---
-# defaults file for aws-ec2-openldap
+# defaults file for aws-get
 vpc_tag_name: ANS0905-AUTO
 sub_tag_name: ANS0905-SUBNET
 sec_tag_name: ANS0905-SECGRP

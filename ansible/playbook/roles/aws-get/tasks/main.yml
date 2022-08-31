@@ -1,5 +1,5 @@
 ---
-# tasks file for aws-ec2-openldap
+# tasks file for aws-get
 
 #========================= GATHER VPC INFO ==================== TAG: always =======================
 - name: get VPC info

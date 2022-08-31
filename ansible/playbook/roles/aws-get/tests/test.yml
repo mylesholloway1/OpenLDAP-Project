@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - aws-ec2-owner
+    - aws-get
