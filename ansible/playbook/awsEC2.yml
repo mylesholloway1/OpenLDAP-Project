@@ -5,8 +5,5 @@
   gather_facts: no
   roles:
     - aws-get
-  tasks:
-
-#=================== GATHER EC2 INFO ========================= TAG: ec2-info ================
-#    - name: get ec2 info
+    - aws-post
       
