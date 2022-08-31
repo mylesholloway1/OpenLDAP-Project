@@ -4,6 +4,8 @@
   connection: local
   roles:
     - aws-ec2-openldap
+  vars: 
+    ansible_python_interpreter: /usr/bin/python3.8
   gather_facts: no
   tasks:
 #===================== CREATE OPENLDAP EC2 INSTANCE =========== TAG: oldap =======================
