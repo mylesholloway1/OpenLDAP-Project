@@ -12,7 +12,7 @@
 
 - name: display vpc-id
   debug: 
-    var: vpcs.vpcs[0].id
+    var: vpcs
   tags: always
 
 #====================== GATHER SUBNET INFO ===================== TAG: always ======================
