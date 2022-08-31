@@ -8,32 +8,6 @@
   roles:
     - aws-ec2-openldap
   tasks:
-
-#====================== GATHER SUBNET INFO ===================== TAG: always ======================
-    - name: get subnet info
-      ec2_vpc_subnet_info:
-        filters: 
-          "tag:Name": ANS0905-SUBNET #TEMPLATE
-          vpc-id: "{{ vpcs.vpcs[0].id }}"
-        region: us-east-1 #TEMPLATE
-      register: aws_subnets
-      tags: always
-    - debug: 
-        var: aws_subnets.subnets[0].id
-      tags: always  
-
-#====================== GATHER SEC GROUP INFO ================= TAG: always =====================
-    - name: get secuirty group info
-      ec2_group_info: 
-        filters:
-          "tag:Name": ANS0905-SECGRP #TEMPLATE
-          vpc-id: "{{ vpcs.vpcs[0].id }}" 
-        region: us-east-1 #TEMPLATE
-      register: aws_groups
-      tags: always
-    - debug: 
-        var: aws_groups.security_groups[0].group_id
-      tags: always
 #===================== CREATE OPENLDAP EC2 INSTANCE =========== TAG: oldap =======================
     - name: EC2 instance
       ec2_instance:
