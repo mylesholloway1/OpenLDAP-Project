@@ -1,2 +1,7 @@
 ---
 # defaults file for aws-ec2-openldap
+vpc_tag_name: ANS0905-AUTO
+sub_tag_name: ANS0905-SUBNET
+sec_tag_name: ANS0905-SECGRP
+user_region: us-east-1
+ec2_region: us-east-1
