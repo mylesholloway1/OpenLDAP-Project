@@ -10,7 +10,7 @@
     - name: get VPC info
       ec2_vpc_net_info:
         filters:
-          "tag:Name":  #TEMPLATE
+          "tag:Name": ANS0905-VPC #TEMPLATE
         region: us-east-1 #TEMPLATE
       register: vpcs
       tags: always
