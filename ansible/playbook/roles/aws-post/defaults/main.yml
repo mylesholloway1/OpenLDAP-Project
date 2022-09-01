@@ -1,6 +1,6 @@
 ---
 # defaults file for aws-post
-ec2_name: Ansible
+ec2_name: Validation
 ec2_instance_type: t2.micro
 ec2_key_name: OpenLabEC2Key
 ec2_image_id: ami-029c0fbe456d58bd1

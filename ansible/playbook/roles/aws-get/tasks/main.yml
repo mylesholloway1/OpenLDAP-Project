@@ -66,3 +66,4 @@
     var: out.stdout
   tags:
     - validate-ec2
+    - create-ec2
