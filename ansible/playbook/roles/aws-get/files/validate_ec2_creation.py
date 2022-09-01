@@ -1,5 +1,13 @@
 import boto3
-client = boto3.client('ec2')
-Myec2=client.describe_instances()
-for pythonins in Myec2['Ansible']:
-    print(pythonins)
+cli = boto3.client('ec2')
+res = cli.describe_instances(
+    Filters=[
+        {
+            'Name': 'Instance-id',
+            'Values': [
+                'i-07121ff5aecbc50e1',
+            ],
+        },
+    ],
+)
+print(res)
