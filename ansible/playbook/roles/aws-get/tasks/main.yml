@@ -56,7 +56,7 @@
 #====================== VALIDATE EC2 INFO ======================
 - name: validate ec2 has been created
   script: validate_ec2_creation.py
-  delegate_to: local
+  delegate_to: localhost
   run_once: true
   tags:
     - validate-ec2
