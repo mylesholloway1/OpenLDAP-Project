@@ -16,7 +16,7 @@ res = ec2.describe_instances(
     ],
 )
 
-if res['Reservations'][0]['Instances'] != []:
+if res['Reservations'] != []:
     print ('ec2 is valid')
 else:
     print ('error creating ec2')
