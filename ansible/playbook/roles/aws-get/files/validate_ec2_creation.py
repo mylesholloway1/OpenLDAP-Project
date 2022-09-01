@@ -19,4 +19,4 @@ res = cli.describe_instances(
     ],
 )
 
-print(res.reservations)
+print(res.stdout)
