@@ -63,6 +63,6 @@
     - validate-ec2
   register: out
 - debug:
-    var: out.stdout_lines
+    var: out.stdout_lines[0]
   tags:
     - validate-ec2
