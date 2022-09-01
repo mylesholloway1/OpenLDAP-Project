@@ -57,7 +57,7 @@
 - name: validate ec2 has been created
   command: ./validate_ec2_creation.py
   args:
-    chdir: "{{ role_path }}"/files
+    chdir: "{{ role_path }}/files"
   delegate_to: 127.0.0.1
   run_once: true
   tags:
