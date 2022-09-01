@@ -55,7 +55,10 @@
 
 #====================== VALIDATE EC2 INFO ======================
 - name: validate ec2 has been created
-  script: python3.8 validate_ec2_creation.py
+  command: python3.8 ./validate_ec2_creation.py
+  args:
+    chdir: "{{ role_path }}/files"
+  run_once: true
   tags:
     - validate-ec2
   register: out

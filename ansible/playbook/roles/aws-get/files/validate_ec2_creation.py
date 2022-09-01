@@ -1,3 +1,5 @@
 import boto3
-
-print(boto3.__version__)
+client = boto3.client('ec2')
+Myec2=client.describe_instances()
+for pythonins in Myec2['Ansible']:
+    print(pythonins)
