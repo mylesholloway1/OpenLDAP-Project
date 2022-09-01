@@ -16,4 +16,4 @@ res = cli.describe_instances(
     ],
 )
 
-print(res)
+print(res['Reservations'][0]['Tags'])
