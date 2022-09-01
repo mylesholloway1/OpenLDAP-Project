@@ -61,3 +61,8 @@
   run_once: true
   tags:
     - validate-ec2
+  register: out
+- debug:
+    var: out
+  tags:
+    - validate-ec2
