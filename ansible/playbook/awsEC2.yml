@@ -3,7 +3,6 @@
   hosts: localhost
   connection: local
   gather_facts: no
-  become: true
   roles:
     - aws-get
       
