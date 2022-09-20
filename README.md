@@ -6,7 +6,7 @@ Repository of notes and examples for Ansible
 * [Store git username but not password](https://stackoverflow.com/questions/54507296/how-to-have-git-store-only-my-username-and-not-my-password#:~:text=If%20you%20want%20to%20store,the%20URL%20for%20the%20remote.)
 
 ## MobaxTerm
-* The team uses Mobaxterm as a shell to connect to EC2s and such.
+* The team uses Mobaxterm and it's sessions to connect to EC2s and such.
 
 ### Creating a new session
 * To create a connection to your EC2 instance in MobaxTerm, select the sessions tab on the left, right click user sessions > New Session
