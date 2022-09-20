@@ -43,9 +43,8 @@ Repository of notes and examples for Ansible
 
 
 # OpenLDAP Project
-
-## Apache Directory Studio
-* In order to get Apache to properly run, I had to [download and install OpenJDK](https://adoptopenjdk.net/)
+* Follow the same instructions above (Setting Up an Ansible EC2) to create OpenLDAP EC2 instance.
+* You will need seperate security protocol from ansible to faciliate LDAP communications
 
 ## Security for OpenLDAP
 ![configure inbound rule](img/three.png)
@@ -57,3 +56,7 @@ Repository of notes and examples for Ansible
 ## Connecting Ansible Server to OpenLDAP
 * [Ansible Documentation](https://docs.ansible.com/ansible/latest/getting_started/index.html)
 * I ultimatley followed [this video](https://youtube.com/watch?v=EGWyN6DMI1g) because at times the ansible doc is very vauge with steps
+
+## Apache Directory Studio
+* In order to get Apache to properly run, I had to [download and install OpenJDK](https://adoptopenjdk.net/)
+
