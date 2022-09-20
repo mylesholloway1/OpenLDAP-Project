@@ -5,21 +5,11 @@ Repository of notes and examples for Ansible
 * [Copy a file to EC2](https://medium.com/srcecde/copy-file-directory-to-from-ec2-using-scp-secure-copy-685c46636399)
 * [Store git username but not password](https://stackoverflow.com/questions/54507296/how-to-have-git-store-only-my-username-and-not-my-password#:~:text=If%20you%20want%20to%20store,the%20URL%20for%20the%20remote.)
 
-## MobaxTerm
-* The team uses Mobaxterm and it's sessions to connect to EC2s and such.
-
-### Creating a new session
-* To create a connection to your EC2 instance in MobaxTerm, select the sessions tab on the left, right click user sessions > New Session
-![Create new session](img/nine.png)
-
-* Enter the following information gathered from your AWS EC2
-![Create new session](img/ten.png)
-
-## Setting Up EC2
+## Setting Up an Ansible EC2
 * Followed [This youtube video](https://www.youtube.com/watch?v=rIi8Pd5Uvbc)
 * we are using RedHat Enteprise Linux when we set up environments
 
-## Selecting RedHat OS & Security Settings
+### Selecting RedHat OS & Security Settings
 * Select RedHat Enterprise
 
 ![select redhat](img/five.png)
@@ -32,11 +22,23 @@ Repository of notes and examples for Ansible
 
 ![Select Edit](img/two.png)
 
-## Security for Ansible
+### Security for Ansible
 ![configure inbound rule](img/eight.png)
 
-## Installing Ansible to EC2 Instance
+### Installing Ansible to EC2 Instance
 * Following [install & config. instructions](https://developers.redhat.com/blog/2016/08/15/install-ansible-on-rhel#)
+
+
+## MobaxTerm
+* The team uses Mobaxterm and it's sessions to connect to EC2s and such.
+
+### Creating a new session
+* To create a connection to your EC2 instance in MobaxTerm, select the sessions tab on the left, right click user sessions > New Session
+![Create new session](img/nine.png)
+
+* Enter the following information gathered from your AWS EC2
+![Create new session](img/ten.png)
+
 
 
 
