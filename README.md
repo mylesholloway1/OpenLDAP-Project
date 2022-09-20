@@ -12,7 +12,7 @@ Repository of notes and examples for Ansible
 * Followed [This youtube video](https://www.youtube.com/watch?v=rIi8Pd5Uvbc)
 * On the DoED project they are using RedHat Enteprise Linux when they set up environments
 
-### Selecting RedHat OS & Security Settings
+## Selecting RedHat OS & Security Settings
 * Select RedHat Enterprise
 
 ![select redhat](img/five.png)
@@ -30,6 +30,8 @@ Repository of notes and examples for Ansible
 
 ## Installing Ansible to EC2 Instance
 * Following [install & config. instructions](https://developers.redhat.com/blog/2016/08/15/install-ansible-on-rhel#)
+
+
 
 # OpenLDAP Project
 
