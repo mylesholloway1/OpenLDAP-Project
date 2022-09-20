@@ -44,7 +44,8 @@ Repository of notes and examples for Ansible
 
 # OpenLDAP Project
 * Follow the same instructions above (Setting Up an Ansible EC2) to create OpenLDAP EC2 instance.
-* You will need seperate security protocol from ansible to faciliate LDAP communications
+* You will need seperate security protocol from ansible to faciliate LDAP communications.
+* You can connect MobaxTerm to the instance the same way you did for Ansible.
 
 ## Security for OpenLDAP
 ![configure inbound rule](img/three.png)
