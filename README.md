@@ -10,7 +10,7 @@ Repository of notes and examples for Ansible
 
 ## Setting Up EC2
 * Followed [This youtube video](https://www.youtube.com/watch?v=rIi8Pd5Uvbc)
-* On the DoED project they are using RedHat Enteprise Linux when they set up environments
+* we are using RedHat Enteprise Linux when we set up environments
 
 ## Selecting RedHat OS & Security Settings
 * Select RedHat Enterprise
