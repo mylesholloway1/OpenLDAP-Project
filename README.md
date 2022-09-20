@@ -8,6 +8,13 @@ Repository of notes and examples for Ansible
 ## MobaxTerm
 * The team uses Mobaxterm as a shell to connect to EC2s and such.
 
+### Creating a new session
+* To create a connection to your EC2 instance in MobaxTerm, select the sessions tab on the left, right click user sessions > New Session
+![Create new session](img/nine.png)
+
+* Enter the following information gathered from your AWS EC2
+![Create new session](img/ten.png)
+
 ## Setting Up EC2
 * Followed [This youtube video](https://www.youtube.com/watch?v=rIi8Pd5Uvbc)
 * we are using RedHat Enteprise Linux when we set up environments
