@@ -1,7 +1,7 @@
-# OpenLDAP-Project
-Repository of notes for the OpenLDAP Project
+# Hello Ansible
+Repository of notes and examples for Ansible
 
-# Other useful links
+# Some useful info
 * [Copy a file to EC2](https://medium.com/srcecde/copy-file-directory-to-from-ec2-using-scp-secure-copy-685c46636399)
 * [Store git username but not password](https://stackoverflow.com/questions/54507296/how-to-have-git-store-only-my-username-and-not-my-password#:~:text=If%20you%20want%20to%20store,the%20URL%20for%20the%20remote.)
 
@@ -9,16 +9,15 @@ Repository of notes for the OpenLDAP Project
 * In order to get Apache to properly run, I had to [download and install OpenJDK](https://adoptopenjdk.net/)
 
 ## MobaxTerm
-* There aren't any explicit instructions on what to do with MobaxTerm. I started to use it as a terminal to connect to EC2.
+* The team uses Mobaxterm as a shell to connect to EC2s and such.
 
 ## Setting up EC2
 
 * Followed [This youtube video](https://www.youtube.com/watch?v=rIi8Pd5Uvbc)
-* On the project they are using RedHat Enteprise Linux when they set up environments
+* On the DoED project they are using RedHat Enteprise Linux when they set up environments
 
 ### Selecting RedHat OS & Security settings
 * Select RedHat Enterprise
-
 
 ![select redhat](img/five.png)
 
