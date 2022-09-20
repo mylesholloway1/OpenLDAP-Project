@@ -25,7 +25,7 @@ Repository of notes and examples for Ansible
 
 ![Select Edit](img/two.png)
 
-### Security for Ansible
+## Security for Ansible
 ![configure inbound rule](img/eight.png)
 
 ## Installing Ansible to EC2 Instance
