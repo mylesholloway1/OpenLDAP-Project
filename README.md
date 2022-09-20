@@ -8,6 +8,9 @@ Repository of notes and examples for Ansible
 ## MobaxTerm
 * The team uses Mobaxterm as a shell to connect to EC2s and such.
 
+### Creating a new session
+* ![Create new session](img/nine.png)
+
 ## Setting Up EC2
 * Followed [This youtube video](https://www.youtube.com/watch?v=rIi8Pd5Uvbc)
 * we are using RedHat Enteprise Linux when we set up environments
