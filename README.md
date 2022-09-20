@@ -1,7 +1,7 @@
 # Hello Ansible
 Repository of notes and examples for Ansible
 
-## Some useful info
+## miscellaneous Info
 * [Copy a file to EC2](https://medium.com/srcecde/copy-file-directory-to-from-ec2-using-scp-secure-copy-685c46636399)
 * [Store git username but not password](https://stackoverflow.com/questions/54507296/how-to-have-git-store-only-my-username-and-not-my-password#:~:text=If%20you%20want%20to%20store,the%20URL%20for%20the%20remote.)
 
@@ -26,7 +26,6 @@ Repository of notes and examples for Ansible
 ![select redhat](img/seven.png)
 
 * Add inbound rules to Security group
-
 
 ![Select Edit](img/two.png)
 
