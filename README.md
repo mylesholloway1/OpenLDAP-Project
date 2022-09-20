@@ -1,18 +1,18 @@
 # Hello Ansible
 Repository of notes and examples for Ansible
 
-## miscellaneous Info
+## Miscellaneous Info
 * [Copy a file to EC2](https://medium.com/srcecde/copy-file-directory-to-from-ec2-using-scp-secure-copy-685c46636399)
 * [Store git username but not password](https://stackoverflow.com/questions/54507296/how-to-have-git-store-only-my-username-and-not-my-password#:~:text=If%20you%20want%20to%20store,the%20URL%20for%20the%20remote.)
 
 ## MobaxTerm
 * The team uses Mobaxterm as a shell to connect to EC2s and such.
 
-## Setting up EC2
+## Setting Up EC2
 * Followed [This youtube video](https://www.youtube.com/watch?v=rIi8Pd5Uvbc)
 * On the DoED project they are using RedHat Enteprise Linux when they set up environments
 
-### Selecting RedHat OS & Security settings
+### Selecting RedHat OS & Security Settings
 * Select RedHat Enterprise
 
 ![select redhat](img/five.png)
