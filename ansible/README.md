@@ -1,4 +1,5 @@
 # /ansible
+* section for all ansible playbooks and materials
 
 # /ansible/documentation
 * [here](https://github.com/mylesholloway1/OpenLDAP-Project/edit/main/ansible/documentation/rh294-8.4-student-guide.pdf) is a PDF doc of an ansible certification course which goes through important concepts to know in ansible
@@ -6,5 +7,5 @@
 
 # /ansible/playbook
 * This is the location for all playbooks and roles kept in this repository'
-* [Example.yml]() contains examples and skeleton ansible structures for you to copy, paste and then customize for your own practices
-* [AWSEc2.yml]()
+* [example.yml](https://github.com/mylesholloway1/OpenLDAP-Project/edit/main/ansible/playbook/awsEC2.yml) contains examples and skeleton ansible structures for you to copy, paste and then customize for your own practices
+* [awsEC2.yml](https://github.com/mylesholloway1/OpenLDAP-Project/edit/main/ansible/playbook/example.yml)
