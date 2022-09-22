@@ -34,9 +34,11 @@ Repository of notes and examples for Ansible
 
 ### Creating a new session
 * To create a connection to your EC2 instance in MobaxTerm, select the sessions tab on the left, right click user sessions > New Session
+
 ![Create new session](img/nine.png)
 
 * Enter the following information gathered from your AWS EC2
+
 ![Create new session](img/ten.png)
 
 
