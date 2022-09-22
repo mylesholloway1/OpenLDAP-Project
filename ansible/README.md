@@ -7,5 +7,5 @@
 
 # /ansible/playbook
 * This is the location for all playbooks and roles kept in this repository'
-* [example.yml](https://github.com/mylesholloway1/OpenLDAP-Project/edit/main/ansible/playbook/awsEC2.yml) contains examples and skeleton ansible structures for you to copy, paste and then customize for your own practices
-* [awsEC2.yml](https://github.com/mylesholloway1/OpenLDAP-Project/edit/main/ansible/playbook/example.yml)
+* [example.yml](https://github.com/mylesholloway1/OpenLDAP-Project/edit/main/ansible/playbook/example.yml) contains examples and skeleton ansible structures for you to copy, paste and then customize for your own practices
+* [awsEC2.yml](https://github.com/mylesholloway1/OpenLDAP-Project/edit/main/ansible/playbook/awsEC2.yml)
