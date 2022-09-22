@@ -2,7 +2,7 @@
 * section for all ansible playbooks and materials
 
 # /ansible/documentation
-* [here](https://github.com/mylesholloway1/OpenLDAP-Project/edit/main/ansible/documentation) is a PDF doc of an ansible certification course which goes through important concepts to know in ansible
+* [Here](https://github.com/mylesholloway1/OpenLDAP-Project/edit/main/ansible/documentation) is a PDF doc of an ansible certification course which goes through important concepts to know in ansible
 * Note: the file is too large to view online. Copy the repo to view the doc.
 
 # /ansible/playbook
